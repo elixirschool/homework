@@ -8,4 +8,5 @@ It is your job to complete the code and ensure the tests pass.
 ## Recommended Order
 
   - [Fibonacci]()
+  - [Word Count]()
 
