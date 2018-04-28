@@ -9,4 +9,4 @@ It is your job to complete the code and ensure the tests pass.
 
   - [Fibonacci]()
   - [Word Count]()
-
+  - [Palindrome]()
