@@ -18,6 +18,10 @@ Each exercise is created as a standalone Mix project requiring a varying degree 
 
   > Print out _N_ steps of the Fibonacci sequence.
 
+  - [Markdown](/tree/master/markdown) _added 2018-04-29_
+
+  > Finish implementing a Markdown parser in Elixir
+
   - [Palindrome](/tree/master/palindrome) _added 2018-04-28_
 
   > Provided with a string of characters ("aabbc"), print all possible palindrome premutations ("abcba", "bacab") to IO.
