@@ -4,8 +4,18 @@ Using the poem _Be Proud of Who You Are_ ([Source](https://www.familyfriendpoems
 
 ```elixir
 iex> WordCount.run("./priv/be-proud-of-who-you-are.txt")
-[{"the", 25}, {"of", 14}, {"and", 9}, {"them", 7}, {"six", 7},
- {"hundred", 7}, {"to", 7}, {"they", 7}, {"cannon", 6}, {"rode", 6}]
+  [
+    {"i", 7},
+    {"to", 5},
+    {"my", 3},
+    {"and", 3},
+    {"me", 3},
+    {"when", 3},
+    {"be", 3},
+    {"a", 2},
+    {"am", 2},
+    {"can", 2}
+  ]
 ```
 
 In addition to practicing problem solving, this exercise also helps us practice program composition the "Elixir way".  To help with there is a particular flow set in place and a robust test suite to help guide your implementation.
