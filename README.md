@@ -26,6 +26,10 @@ Each exercise is created as a standalone Mix project requiring a varying degree 
 
   > Provided with a string of characters ("aabbc"), print all possible palindrome premutations ("abcba", "bacab") to IO.
 
+  - [Simple Bank](/tree/master/simple_bank) _added 2018-04-30_
+
+  > Implement a GenServer based bank with support for account registration, deposits, withdrawls, and account balance inquiries.
+
 ## Contributions
 
 We'd love to hear your feedback on how these exercises are working for you.
