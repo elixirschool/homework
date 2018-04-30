@@ -6,6 +6,10 @@ Each exercise is created as a standalone Mix project requiring a varying degree 
 
 ## Exercises
 
+  - [Shapes](https://github.com/elixirschool/homework/tree/master/shapes) _added 2018-05-01_
+
+  > Print different shapes to IO like diamonds, squares, and pyramids given their size.
+
   - [String Cases](https://github.com/elixirschool/homework/tree/master/string_cases) _added 2018-04-30_
 
   > In this exercise we'll implement functions to convert strings to CamelCase, snake_case, and WaVyCaSe.
