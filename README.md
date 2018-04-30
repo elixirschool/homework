@@ -6,23 +6,23 @@ Each exercise is created as a standalone Mix project requiring a varying degree 
 
 ## Exercises
 
-  - [Collections](/tree/master/collections) _added 2018-04-29_
+  - [Collections](https://github.com/elixirschool/homework/tree/master/collections) _added 2018-04-29_
 
   > Implement multiple functions that manipulate and retrieve data from within collections.
 
-  - [Word Count](/tree/master/word_count) _added 2018-04-28_
+  - [Word Count](https://github.com/elixirschool/homework/tree/master/word_count) _added 2018-04-28_
 
   > Using the provided poem _Be Proud of Who You Are_ (found within `word_count/priv`), count the occurrences of each word and print the top 10 most frequent.
 
-  - [Fibonacci](/tree/master/fibonacci) _added 2018-04-28_
+  - [Fibonacci](https://github.com/elixirschool/homework/tree/master/fibonacci) _added 2018-04-28_
 
   > Print out _N_ steps of the Fibonacci sequence.
 
-  - [Markdown](/tree/master/markdown) _added 2018-04-29_
+  - [Markdown](https://github.com/elixirschool/homework/tree/master/markdown) _added 2018-04-29_
 
   > Finish implementing a Markdown parser in Elixir
 
-  - [Palindrome](/tree/master/palindrome) _added 2018-04-28_
+  - [Palindrome](https://github.com/elixirschool/homework/tree/master/palindrome) _added 2018-04-28_
 
   > Provided with a string of characters ("aabbc"), print all possible palindrome premutations ("abcba", "bacab") to IO.
 
