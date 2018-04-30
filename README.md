@@ -6,6 +6,10 @@ Each exercise is created as a standalone Mix project requiring a varying degree 
 
 ## Exercises
 
+  - [String Cases](https://github.com/elixirschool/homework/tree/master/string_cases) _added 2018-04-30_
+
+  > In this exercise we'll implement functions to convert strings to CamelCase, snake_case, and WaVyCaSe.
+
   - [Collections](https://github.com/elixirschool/homework/tree/master/collections) _added 2018-04-29_
 
   > Implement multiple functions that manipulate and retrieve data from within collections.
