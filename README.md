@@ -30,6 +30,10 @@ Each exercise is created as a standalone Mix project requiring a varying degree 
 
   > Implement a GenServer based bank with support for account registration, deposits, withdrawls, and account balance inquiries.
 
+  - [Simple Bank Online](/tree/master/simple_bank_online) _added 2018-05-02_
+
+  > Using the implementation from [Simple Bank](/tree/master/simple_bank), complete the JSON API to bring your bank online!
+
 ## Contributions
 
 We'd love to hear your feedback on how these exercises are working for you.
