@@ -21,10 +21,10 @@ defmodule SimpleBankTest do
 
   describe "deposit/3" do
     test "increases the account balance by the deposited amount", %{bank: bank_pid}  do
-      assert {:ok, 110} == SimpleBank.deposit(bank_pid, "test_id", 10)
+      assert {:ok, 10} == SimpleBank.deposit(bank_pid, "test_id", 10)
     end
 
-    test "does not allow deposits of negative ammounts", %{bank: bank_pid}  do
+    test "does not allow deposits of negative amounts", %{bank: bank_pid}  do
       assert {:error, :pos_integer_only} == SimpleBank.deposit(bank_pid, "test_id", -1)
     end
 
@@ -52,7 +52,7 @@ defmodule SimpleBankTest do
       assert {:error, :insufficient_funds} == SimpleBank.withdrawl(bank_pid, "test_id", -1)
     end
 
-    test "does not allow withdrawls of negative ammounts", %{bank: bank_pid}  do
+    test "does not allow withdrawls of negative amounts", %{bank: bank_pid}  do
       assert {:error, :pos_integer_only} == SimpleBank.withdrawl(bank_pid, "test_id", 1000)
     end
 

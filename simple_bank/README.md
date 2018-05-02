@@ -1,21 +1,38 @@
 # SimpleBank
 
-**TODO: Add description**
+In this lesson we're going to practice building a GenServer to
 
-## Installation
+- Capitalize all of the words in a given list
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `simple_bank` to your list of dependencies in `mix.exs`:
+  ```elixir
+  iex> Collections.capitalize(["elixir", "rocks"])
+  ["Elixir", "Rocks"]
+  ```
 
-```elixir
-def deps do
-  [
-    {:simple_bank, "~> 0.1.0"}
-  ]
-end
+- The function `even/1` should return only the even numbers in a list
+
+  ```elixir
+  iex> Collections.even([1, 2, 3, 4, 5, 6])
+  [2, 4, 6]
+  ```
+
+- Use `long_word/1` to find the word with the greatest length in a list
+
+  ```elixir
+  iex> Collections.long_word(["we", "the", "people"])
+  "people"
+  ```
+
+-  Given a list of people put them into their respective age groups (0-10, 10-20, 20-30, etc).
+
+  ```elixir
+  iex> Collections.age_groups([%{name: "Sean", age: 33}, %{name: "Sarah", age: 33}, %{name: "Darren", age: 51}])
+  %{"30-40" => ["Sean", "Sarah"], "50-60" => ["Darren"]}
+  ```
+
+To verify your code works and the tests pass run:
+
+```shell
+$ mix test
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/simple_bank](https://hexdocs.pm/simple_bank).
 
