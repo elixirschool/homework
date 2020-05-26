@@ -16,11 +16,12 @@ defmodule Fizzbuzz do
   "fizzbuzz"
   """
 
-  def fizzbuzz(number) when rem(number, 3) == 0 do
-    "fizz"
-  end
-
-  def fizzbuzz(number) do
-    number
+  def fizzbuzz(num) do
+    cond do
+      rem(num, 15) == 0 -> IO.puts "FizzBuzz"
+      rem(num, 5) == 0  -> IO.puts "Buzz"
+      rem(num, 3) == 0  -> IO.puts "Fizz"
+      true              -> IO.puts num
+    end
   end
 end
