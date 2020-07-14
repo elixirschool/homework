@@ -59,7 +59,21 @@ defmodule SimpleBank do
   end
 
   @spec withdrawl(pid(), String.t(), pos_integer()) :: {:ok, {pos_integer(), pos_integer()}} | {:error, reason}
-  def withdrawl(bank_pid, account_id, amount) do
+  def withdrawl(bank_pid, account_id, amount) when is_integer(amount) and amount > 0 do
+    case get_account_by_id(bank_pid, account_id) do
+      nil -> {:error, :missing_account}
+      account ->
+        if account.balance < amount do
+          {:error, :insufficient_funds}
+        else
+          account = GenServer.call(bank_pid, {:withdrawal, account, amount})
+          {:ok, account.balance}
+        end
+    end
+  end
+
+  def withdrawl(_bank_pid, _account_id, amount) when is_integer(amount) and amount <= 0 do
+    {:error, :pos_integer_only}
   end
 
   def init(initial_state) do
@@ -90,8 +104,18 @@ defmodule SimpleBank do
     {:reply, account, new_state}
   end
 
+  def handle_call({:withdrawal, account, amount}, _from, state) do
+      account = do_withdrawal(account, amount)
+      new_state = update_account_in_state(account, state)
+    {:reply, account, new_state}
+  end
+
   def do_deposit(account, amount) do
     Map.put(account, :balance, account.balance + amount)
+  end
+
+  def do_withdrawal(account, amount) do
+    Map.put(account, :balance, account.balance - amount)
   end
 
   def update_account_in_state(account, state) do
